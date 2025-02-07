@@ -1,0 +1,162 @@
+:root{
+    --Lightred: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+}
+@font-face{
+    font-family: hanken;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+    background-color: aliceblue;
+    font-family: hanken;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+#Result{
+    color: white;
+    background-image: linear-gradient(rgb(121, 12, 230), var(--Cobaltblue)60%);
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+#cricle{
+    background-color: var(--Cobaltblue);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#seven{
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0px;
+}
+#of{
+    color: rgb(198, 166, 228);
+    margin-top: 0px;
+}
+h2{
+    margin-bottom: 0px;
+}
+#text{
+    text-align: center;
+}
+#summary{
+    width: 230px;
+    padding: 30px;
+    
+}
+#table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 600
+}
+
+#Reaction{
+    background-color: rgb(254, 243, 243);
+    color: var(--Lightred);
+
+}
+#Memory{
+    background-color: rgb(252, 249, 246);
+    color: var(--Orangeyyellow);
+}
+#Verbal{
+    background-color: rgb(241, 255, 250);
+    color: var(--Greenteal);
+
+}
+#Visual{
+    background-color: rgb(236, 242, 255);
+    color: var(--Cobaltblue);
+}
+.bold{
+    color: black;
+}
+.p{
+    color: gray;
+}
+
+
+#Continue{
+    color: white;
+    background-color: rgb(45, 43, 41);
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#Continue:hover{
+    background-image: linear-gradient(rgb(121, 12, 230), var(--Cobaltblue)60%);
+}
+
+
+
+
+@media screen and (max-width: 500px){
+  body{
+    border: 0px;
+    margin: 0px;
+    height: 100%;
+
+  }
+  main{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #Result{
+    width: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  #summary{
+    width: auto;
+  }
+  #table{
+    width: auto;
+  }
+  .row{
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+
+
+}
+    
+
+
